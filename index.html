@@ -3,14 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technomani AI</title>
+
+    <title>Technomani AI | هوش مصنوعی هوشمند</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            height: 70px;
+            padding: 0 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7c5cff;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #8f7aff;
+        }
+
+        .hero {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: rgba(124,92,255,0.15);
+            color: #a995ff;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #7c5cff;
+        }
+
+        .description {
+            color: #b8bdd0;
+            font-size: 20px;
+            line-height: 2;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .primary {
+            background: #7c5cff;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #343b55;
+            color: white;
+        }
+
+        .primary:hover {
+            background: #6848ee;
+        }
+
+        .secondary:hover {
+            background: #151b30;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 60px auto 0;
+        }
+
+        .feature {
+            background: #12182b;
+            border: 1px solid #252d46;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #a995ff;
+        }
+
+        .feature p {
+            color: #9da4ba;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Technomani AI</h1>
+<header>
 
-    <p>اولین نسخه هوش مصنوعی Technomani</p>
+    <div class="logo">
+        Technomani AI
+    </div>
+
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#">هوش مصنوعی</a>
+        <a href="#">ابزارها</a>
+        <a href="#">درباره ما</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            نسل جدید هوش مصنوعی Technomani
+        </div>
+
+        <h1>
+            به <span>Technomani AI</span> خوش آمدید
+        </h1>
+
+        <p class="description">
+            یک پلتفرم هوش مصنوعی برای گفتگو، تولید محتوا،
+            تحلیل اطلاعات، آموزش و انجام کارهای هوشمند.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#" class="btn primary">
+                شروع استفاده از هوش مصنوعی
+            </a>
+
+            <a href="#" class="btn secondary">
+                امکانات Technomani
+            </a>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>💬 گفت‌وگوی هوشمند</h3>
+                <p>
+                    گفتگو با هوش مصنوعی و دریافت پاسخ برای پرسش‌های مختلف.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>✍️ تولید محتوا</h3>
+                <p>
+                    تولید متن، مقاله، ایده، توضیحات محصول و محتوای شبکه‌های اجتماعی.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🤖 ابزارهای AI</h3>
+                <p>
+                    مجموعه‌ای از ابزارهای هوش مصنوعی برای کار، آموزش و کسب‌وکار.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 </html>
